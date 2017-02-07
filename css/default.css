@@ -1,0 +1,146 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 350px;
+	height: 350px;
+	position: relative;
+	left: 30%;
+	top: 40%;
+	margin-top: -50px;
+	margin-left: -300px;
+}
+
+.mono {
+	font-family: 'Righteous', cursive;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+
+
+
+/* Animation Keyframes */
+
+
+
+
+/*   SSSSSSSS    */
+@-webkit-keyframes s_move {
+	0% {-webkit-transform: rotate(0deg); color: black; top: 0px; left: 0px;}
+
+	50% {-webkit-transform: rotate(360deg); color: #CE887D; top: 0px; left: 90px;}
+
+	100% {-webkit-transform: rotate(0deg); color: black; top: 0px; left: 0px;}
+}
+
+#s {
+	position: relative;
+	-webkit-animation: s_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+/* 0% 	{ -webkit-transform: rotate(0deg); width: 0px; height: 0px; border-radius: 0%; opacity: 1; } */
+
+
+/*   IIIIIIIII     */
+@-webkit-keyframes i_move {
+	0% {opacity: 100; color: black;} 
+	25% {opacity: 0; color: #CE887D;} 
+	50% {opacity: 100; color: #E28E76;}
+	75% {opacity: 0; color: #CE887D;} 
+	100% {opacity: 100; color: black;}
+}
+
+#i {
+	opacity: 0;
+	-webkit-animation: i_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+
+
+/*   LLLLLLLLLLLL      */
+@-webkit-keyframes l_move {
+	0% {top: 0px; left: 0px; color: black} 
+	25% {top: 100px; left: -45px; color: black}
+	50% {top: 0px; left: -90px; color: #F09272} 
+	75% {top: -100px; left: -45px; color: black}
+	100% {top: 0px; left: 0px; color: black}
+}
+
+#l {
+	position: relative;
+	-webkit-animation: l_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+
+/*   EEEEEEEEEEEEEE    */
+@-webkit-keyframes e_move {
+	0% {top: 0px; left: 0px;color:black;}
+	10% {top: 0px; left: 55px;color:#A6888C; } 
+	50% {top: 0px; left: 55px;color:#A6888C;}
+	68% {top: 0px; left: 0px;color:black;}
+	100% {top: 0px; left: 0px;color:black;}
+}
+
+#e {
+	position: relative;
+	-webkit-animation: e_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+
+/*   NNNNNNNNNNNNNN   */
+@-webkit-keyframes n_move {
+	0% {top: 0px; left: 0px;color:black;}
+	18% {top: 0px; left: 55px; color:#A398A1; } 
+	50% {top: 0px; left: 55px; color:#A398A1;}
+	60% {top: 0px; left: 0px;color:black;}
+	100% {top: 0px; left: 0px;color:black;}
+	}
+
+#n {
+	position: relative;
+	-webkit-animation: n_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+/*   TTTTTTTTTTTTTTTTT     */
+@-webkit-keyframes t_move {
+	0% {-webkit-transform: rotate(0deg); color: black; top: 0px; left: 0px;}
+	25% {-webkit-transform: rotate(20deg); color: black; top: 0px; left: -135px;}
+	50% {-webkit-transform: rotate(0deg); color: #CE887D; top: 0px; left: -135px;}
+	75% {-webkit-transform: rotate(-20deg); color: black; top: 0px; left: 90px;}
+	100% {-webkit-transform: rotate(0deg); color: black; top: 0px; left: 0px;}
+
+}
+
+#t {
+	position: relative;
+	-webkit-animation: t_move 5s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+/* 
+
+— Must be looped. (in -webkit-animation, use "infinite")
+
+— Must have at least one keyframe that changes multiple css attributes at once. 
+
+— You may add additional moving elements.
+
+— Upload as Github Page by the end of class. 
+*/
